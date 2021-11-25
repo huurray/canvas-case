@@ -55,6 +55,11 @@ const reset = css`
 		border-collapse: collapse;
 		border-spacing: 0;
 	}
+	a {
+		color: unset;
+		text-decoration: none; 
+		outline: none;
+	}
 	#root {
 		width: 100%;
 		height: 100%;
