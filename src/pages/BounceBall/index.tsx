@@ -10,7 +10,7 @@ const BounceBall = () => {
   const { screenWidth, screenHeight } = useScreenSize();
 
   const ball = useMemo(
-    () => new Ball(screenWidth, screenHeight, 60, 8),
+    () => new Ball(screenWidth, screenHeight, 60, 10),
     [screenWidth, screenHeight]
   );
   const block = useMemo(() => new Block(700, 30, 300, 450), []);
@@ -38,10 +38,9 @@ const BounceBall = () => {
   }, [screenWidth, screenHeight, ball, block]);
 
   useEffect(() => {
-    window.addEventListener("resize", resize, false);
     resize();
-
-    return () => window.removeEventListener("resize", resize, false);
+    window.addEventListener("resize", resize);
+    return () => window.removeEventListener("resize", resize);
   }, [resize]);
 
   useEffect(() => {

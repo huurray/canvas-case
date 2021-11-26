@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Main from "pages/Main";
 import BounceBall from "pages/BounceBall";
 import RotateBox from "pages/RotateBox";
+import Draw from "pages/Draw";
+import MakeCircles from "pages/MakeCircles";
 // styles
 import { Global, ThemeProvider } from "@emotion/react";
 import reset from "styles/reset";
@@ -14,6 +16,8 @@ const App = () => (
     <Router>
       <Routes>
         <Route path="/" element={<Main />} />
+        <Route path="/draw" element={<Draw />} />
+        <Route path="/make-circles" element={<MakeCircles />} />
         <Route path="/bounce-ball" element={<BounceBall />} />
         <Route path="/rotate-box" element={<RotateBox />} />
       </Routes>

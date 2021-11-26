@@ -4,6 +4,12 @@ import { Link } from "react-router-dom";
 function Main() {
   return (
     <Container>
+      <Link to="/make-circles">
+        <h1>MakeCircles</h1>
+      </Link>
+      <Link to="/draw">
+        <h1>Draw</h1>
+      </Link>
       <Link to="/bounce-ball">
         <h1>BounceBall</h1>
       </Link>
