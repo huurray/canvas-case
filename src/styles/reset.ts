@@ -1,4 +1,4 @@
-import {css} from '@emotion/react';
+import { css } from "@emotion/react";
 
 const reset = css`
 	@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
@@ -6,6 +6,7 @@ const reset = css`
 	html, body {
 		width: 100%;
 		height: 100%;
+		font-size: 10px;
 	}
 	html, body, div, span, applet, object, iframe,
 	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -23,8 +24,6 @@ const reset = css`
 		margin: 0;
 		padding: 0;
 		border: 0;
-		font-size: 100%;
-		font-family: 'Noto Sans KR';
 		vertical-align: baseline;
 	}
 	article, aside, details, figcaption, figure, 
@@ -63,6 +62,9 @@ const reset = css`
 	#root {
 		width: 100%;
 		height: 100%;
+	}
+	@media all and (max-width: 750px) {
+		html { font-size: 6px; } 
 	}
 `;
 

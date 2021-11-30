@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // components
 import Main from "pages/Main";
-import BounceBall from "pages/BounceBall";
-import RotateBox from "pages/RotateBox";
-import Draw from "pages/Draw";
 import MakeCircles from "pages/MakeCircles";
+// redux
+import { rootStore } from "stores/root";
+import { Provider } from "react-redux";
 // styles
 import { Global, ThemeProvider } from "@emotion/react";
 import reset from "styles/reset";
@@ -12,16 +12,15 @@ import theme from "styles/theme";
 
 const App = () => (
   <ThemeProvider theme={theme}>
-    <Global styles={reset} />
-    <Router>
-      <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/draw" element={<Draw />} />
-        <Route path="/make-circles" element={<MakeCircles />} />
-        <Route path="/bounce-ball" element={<BounceBall />} />
-        <Route path="/rotate-box" element={<RotateBox />} />
-      </Routes>
-    </Router>
+    <Provider store={rootStore}>
+      <Global styles={reset} />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/make-circles" element={<MakeCircles />} />
+        </Routes>
+      </Router>
+    </Provider>
   </ThemeProvider>
 );
 

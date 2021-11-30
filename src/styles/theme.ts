@@ -1,6 +1,6 @@
 const theme = {
   sizes: {
-    headerHeight: "50px",
+    headerHeight: "60px",
   },
   colors: {
     white: "#fff",

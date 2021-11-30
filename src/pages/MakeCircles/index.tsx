@@ -1,39 +1,54 @@
-import { useEffect, useRef } from "react";
-import useScreenSize from "hooks/useScreenSize";
+import { useEffect, useRef, useState } from "react";
+import styled from "@emotion/styled";
+// hooks
+import useMakeCircles from "./useMakeCircles";
+// styles
+import { Header } from "styles/ui";
 
-const RotateBox = () => {
-  const { screenWidth, screenHeight, pixelRatio } = useScreenSize(resize);
+const MakeCircles = () => {
+  const screenWidth = window.innerWidth;
+  const screenHeight = window.innerHeight;
 
   const canvasRef = useRef<HTMLCanvasElement | any>(null);
-  const ctxRef = useRef<CanvasRenderingContext2D | any>(null);
-  const ctx = ctxRef.current;
+  const [ctx, setCtx] = useState<CanvasRenderingContext2D | null>(null);
 
-  function resize() {
+  const { animate } = useMakeCircles(ctx);
+
+  function init() {
+    if (!canvasRef?.current) return;
+
     const canvas = canvasRef.current;
-    canvas.width = screenWidth * pixelRatio;
-    canvas.height = screenHeight * pixelRatio;
-    canvas.style.width = `${screenWidth}px`;
-    canvas.style.height = `${screenHeight}px`;
-
     const context = canvas.getContext("2d");
-    context.scale(pixelRatio, pixelRatio);
-    ctxRef.current = context;
-  }
+    setCtx(context);
 
-  function draw({ nativeEvent }) {
-    const { offsetX, offsetY } = nativeEvent;
-    ctx.fillStyle = "#fdd700";
-    ctx.beginPath();
-    ctx.arc(offsetX, offsetY, 10, 0, 2 * Math.PI);
-    ctx.fill();
+    canvas.width = screenWidth;
+    canvas.height = screenHeight;
   }
 
   useEffect(() => {
-    resize();
+    if (!ctx) return;
+    animate();
+    // eslint-disable-next-line
+  }, [ctx]);
+
+  useEffect(() => {
+    init();
     // eslint-disable-next-line
   }, []);
 
-  return <canvas ref={canvasRef} onMouseDown={draw} />;
+  return (
+    <Container>
+      <Header whiteBackIcon />
+      <canvas ref={canvasRef} />
+    </Container>
+  );
 };
 
-export default RotateBox;
+export default MakeCircles;
+
+const Container = styled.div`
+  canvas {
+    width: 100%;
+    height: 100%;
+  }
+`;

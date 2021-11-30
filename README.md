@@ -1,1 +1,1 @@
-## Canvas Portfolio by huurray.
+## Canvas Case by huurray.
