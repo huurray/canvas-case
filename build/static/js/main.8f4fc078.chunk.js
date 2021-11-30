@@ -1,0 +1,2 @@
+(this["webpackJsonpcanvas-case"]=this["webpackJsonpcanvas-case"]||[]).push([[0],{9:function(e,c,n){"use strict";n.r(c);var t=n(1),s=n.n(t),a=n(3),r=n.n(a),i=n(0),o=function(){return Object(i.jsx)("div",{children:"12312312"})};r.a.render(Object(i.jsx)(s.a.StrictMode,{children:Object(i.jsx)(o,{})}),document.getElementById("root"))}},[[9,1,2]]]);
+//# sourceMappingURL=main.8f4fc078.chunk.js.map
