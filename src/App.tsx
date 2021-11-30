@@ -14,7 +14,7 @@ const App = () => (
   <ThemeProvider theme={theme}>
     <Provider store={rootStore}>
       <Global styles={reset} />
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/make-circles" element={<MakeCircles />} />
