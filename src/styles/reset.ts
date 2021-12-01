@@ -66,6 +66,22 @@ const reset = css`
 	@media all and (max-width: 750px) {
 		html { font-size: 6px; } 
 	}
+	* {
+	 	/* scrollbar styling */
+		scrollbar-color: unset;
+    ::-webkit-scrollbar {
+      -webkit-appearance: none;
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: unset; 
+    }
+    ::-webkit-scrollbar-thumb {
+      border-radius: 7px;
+      background-color: #eeeeee;
+    }
+	}
 `;
 
 export default reset;

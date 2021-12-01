@@ -17,6 +17,7 @@ declare module "@emotion/react" {
       gold: string;
       silver: string;
       bronze: string;
+      indigo: string;
       grey100: string;
       grey200: string;
       grey300: string;
