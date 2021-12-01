@@ -5,4 +5,7 @@
 
 https://huurray.github.io/canvas-case/
 
-![스크린샷 2021-11-30 오후 11 44 16](https://user-images.githubusercontent.com/41982439/144068504-cf1bdbe3-8705-4315-a268-06a32067324e.png)
+<img width="1784" alt="스크린샷 2021-12-01 오후 5 54 41" src="https://user-images.githubusercontent.com/41982439/144202709-abc683da-9495-44c8-a216-b043589e706e.png">
+
+### Make Circles
+<img width="1774" alt="스크린샷 2021-12-01 오후 5 55 24" src="https://user-images.githubusercontent.com/41982439/144202773-09f3a053-810a-4987-ad28-9c51dee88cf1.png">
