@@ -1,8 +1,12 @@
 import { useEffect, useRef } from "react";
+// lib
+import { getMedia } from "lib/media";
 
 export default function useMakeCircles(ctx: CanvasRenderingContext2D | null) {
   const screenWidth = window.innerWidth;
   const screenHeight = window.innerHeight;
+
+  const media = getMedia();
 
   const pointRef = useRef({ x: screenWidth / 2, y: screenHeight / 2 });
 
@@ -75,7 +79,15 @@ export default function useMakeCircles(ctx: CanvasRenderingContext2D | null) {
       y: (Math.random() - 0.5) * 3.5,
     };
 
-    const newParticle = new (Particle as any)(x, y, randomVelocity.x, randomVelocity.y, 60, 8);
+    let r = 90;
+    if (media === "tablet") r = 70;
+    if (media === "phone") r = 50;
+
+    let ttl = 15;
+    if (media === "tablet") ttl = 11;
+    if (media === "phone") ttl = 8;
+
+    const newParticle = new (Particle as any)(x, y, randomVelocity.x, randomVelocity.y, r, ttl);
     particles.push(newParticle);
 
     function draw() {
@@ -97,7 +109,7 @@ export default function useMakeCircles(ctx: CanvasRenderingContext2D | null) {
     if (!ctx) return;
     window.requestAnimationFrame(animate);
 
-    ctx.fillStyle = "#1e1e1e";
+    ctx.fillStyle = "#222";
     ctx.fillRect(0, 0, screenWidth, screenHeight);
 
     const newExplosion = new (Explosion as any)(pointRef.current.x, pointRef.current.y);

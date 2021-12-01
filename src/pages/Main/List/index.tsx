@@ -62,7 +62,6 @@ const ListBox = styled.div`
     cursor: pointer;
     transition: 0.15s transform;
     overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.1);
 
     .name {
       margin: 2rem 2.5rem;
@@ -72,8 +71,7 @@ const ListBox = styled.div`
     }
 
     &:hover {
-      animation: ${shake} 0.6s cubic-bezier(0.36, 0.07, 0.19, 0.97);
-      animation-iteration-count: infinite;
+      animation: ${shake} 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
       transform: translate3d(0, 0, 0);
       perspective: 1000px;
     }

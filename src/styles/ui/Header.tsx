@@ -13,10 +13,7 @@ function Header({ whiteBackIcon, style }: IProps) {
   const navigate = useNavigate();
   return (
     <Container style={style}>
-      <ArrowLeft
-        onClick={() => navigate(-1)}
-        style={{ color: whiteBackIcon ? "#fff" : undefined }}
-      />
+      <ArrowLeft onClick={() => navigate(-1)} style={{ color: whiteBackIcon ? "#fff" : "#222" }} />
     </Container>
   );
 }

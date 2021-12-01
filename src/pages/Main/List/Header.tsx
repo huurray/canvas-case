@@ -46,7 +46,11 @@ function Header() {
       ))}
       {transitionC((style) => (
         <animated.div style={style}>
-          <GithubDescription href="https://github.com/huurray/canvas-case">
+          <GithubDescription
+            href="https://github.com/huurray/canvas-case"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <GitHub />
             <p>Code is here</p>
           </GithubDescription>

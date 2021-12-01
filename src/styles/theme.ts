@@ -10,7 +10,7 @@ const theme = {
     red: "#e14614",
     orange: "#e76f51",
     yellow: "#f4a261",
-    beige: "#F2F3ED",
+    beige: "#ffe8d6",
     gold: "#F3CE6F",
     silver: "#CFCFCF",
     bronze: "#D7A088",
