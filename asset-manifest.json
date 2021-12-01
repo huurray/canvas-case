@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.js": "/canvas-case/static/js/main.b5fb43a8.chunk.js",
-    "main.js.map": "/canvas-case/static/js/main.b5fb43a8.chunk.js.map",
+    "main.js": "/canvas-case/static/js/main.278cdc8a.chunk.js",
+    "main.js.map": "/canvas-case/static/js/main.278cdc8a.chunk.js.map",
     "runtime-main.js": "/canvas-case/static/js/runtime-main.6ea24508.js",
     "runtime-main.js.map": "/canvas-case/static/js/runtime-main.6ea24508.js.map",
-    "static/js/2.9216b730.chunk.js": "/canvas-case/static/js/2.9216b730.chunk.js",
-    "static/js/2.9216b730.chunk.js.map": "/canvas-case/static/js/2.9216b730.chunk.js.map",
+    "static/js/2.00e79171.chunk.js": "/canvas-case/static/js/2.00e79171.chunk.js",
+    "static/js/2.00e79171.chunk.js.map": "/canvas-case/static/js/2.00e79171.chunk.js.map",
     "index.html": "/canvas-case/index.html",
-    "static/js/2.9216b730.chunk.js.LICENSE.txt": "/canvas-case/static/js/2.9216b730.chunk.js.LICENSE.txt",
-    "static/media/make-circles.d8363d5b.png": "/canvas-case/static/media/make-circles.d8363d5b.png"
+    "static/js/2.00e79171.chunk.js.LICENSE.txt": "/canvas-case/static/js/2.00e79171.chunk.js.LICENSE.txt",
+    "static/media/follow-lines.127ad794.png": "/canvas-case/static/media/follow-lines.127ad794.png",
+    "static/media/make-circles.2293b856.png": "/canvas-case/static/media/make-circles.2293b856.png"
   },
   "entrypoints": [
     "static/js/runtime-main.6ea24508.js",
-    "static/js/2.9216b730.chunk.js",
-    "static/js/main.b5fb43a8.chunk.js"
+    "static/js/2.00e79171.chunk.js",
+    "static/js/main.278cdc8a.chunk.js"
   ]
 }
