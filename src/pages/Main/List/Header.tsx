@@ -39,7 +39,7 @@ function Header() {
       {transitionB((style) => (
         <animated.div style={style}>
           <Description>
-            A collection of interactive designs using HTML Canvas that has been recreated with many
+            A collection of interactive design using HTML Canvas that has been recreated with many
             references.
           </Description>
         </animated.div>
@@ -52,7 +52,7 @@ function Header() {
             rel="noopener noreferrer"
           >
             <GitHub />
-            <p>Code is here</p>
+            <span>Code is here</span>
           </GithubDescription>
         </animated.div>
       ))}
@@ -80,20 +80,16 @@ const Description = styled.p`
 const GithubDescription = styled.a`
   font-size: 2.2rem;
   color: ${({ theme }) => theme.colors.green};
-  display: flex;
-  align-items: center;
   cursor: pointer;
 
   svg {
-    width: 1.9rem;
-    height: 1.9rem;
+    width: 1.8rem;
+    height: 1.8rem;
     margin-right: 0.4rem;
     margin-top: -0.3rem;
   }
 
   &:hover {
-    p {
-      text-decoration: underline;
-    }
+    border-bottom: 2px solid ${({ theme }) => theme.colors.green};
   }
 `;

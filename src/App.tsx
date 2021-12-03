@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Main from "pages/Main";
 import MakeCircles from "pages/MakeCircles";
 import FollowLines from "pages/FollowLines";
+import Gravity from "pages/Gravity";
 // redux
 import { rootStore } from "stores/root";
 import { Provider } from "react-redux";
@@ -20,6 +21,7 @@ const App = () => (
           <Route path="/" element={<Main />} />
           <Route path="/make-circles" element={<MakeCircles />} />
           <Route path="/follow-lines" element={<FollowLines />} />
+          <Route path="/gravity" element={<Gravity />} />
         </Routes>
       </Router>
     </Provider>

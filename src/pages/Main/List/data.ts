@@ -1,6 +1,7 @@
 // styles
 import MakeCirclesImg from "assets/imgs/make-circles.png";
 import FollowLinesImg from "assets/imgs/follow-lines.png";
+import GravityImg from "assets/imgs/gravity.png";
 
 export const data = [
   {
@@ -12,5 +13,10 @@ export const data = [
     name: "Follow Lines",
     backgroundImage: FollowLinesImg,
     url: "/follow-lines",
+  },
+  {
+    name: "Gravity",
+    backgroundImage: GravityImg,
+    url: "/gravity",
   },
 ];

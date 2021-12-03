@@ -109,7 +109,7 @@ export default function useMakeCircles(ctx: CanvasRenderingContext2D | null) {
     if (!ctx) return;
     window.requestAnimationFrame(animate);
 
-    ctx.fillStyle = "#222";
+    ctx.fillStyle = "#14213d";
     ctx.fillRect(0, 0, screenWidth, screenHeight);
 
     const newExplosion = new (Explosion as any)(pointRef.current.x, pointRef.current.y);

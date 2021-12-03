@@ -34,7 +34,7 @@ export default function useFollowLines(ctx: CanvasRenderingContext2D | null) {
   }
 
   function Particle(x: number, y: number, radius: number, color: string) {
-    let size = 50;
+    let size = 60;
     if (media === "tablet") size = 35;
     if (media === "phone") size = 20;
 
@@ -90,8 +90,6 @@ export default function useFollowLines(ctx: CanvasRenderingContext2D | null) {
   function animate() {
     if (!ctx) return;
     window.requestAnimationFrame(animate);
-
-    ctx.fillStyle = "#ffe8d6";
 
     particles.forEach((particle) => {
       particle.update();

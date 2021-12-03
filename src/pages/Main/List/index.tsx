@@ -16,7 +16,12 @@ function List({ transition }) {
       <ListBox>
         {transition((style, item) => (
           <animated.div className="item" style={{ ...style }} onClick={() => navigate(item.url)}>
-            <div className="name">{item.name}</div>
+            <div className="name">
+              <span>
+                <div className="name-back" />
+                <span>{item.name}</span>
+              </span>
+            </div>
             <img src={item.backgroundImage} alt="이미지" />
           </animated.div>
         ))}
@@ -67,7 +72,21 @@ const ListBox = styled.div`
       margin: 2rem 2.5rem;
       font-size: 2rem;
       text-align: right;
-      color: ${({ theme }) => theme.colors.grey500};
+      color: ${({ theme }) => theme.colors.grey200};
+      span {
+        padding: 0.15rem 0.4rem;
+        position: relative;
+        .name-back {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-color: rgba(0, 0, 0, 0.2);
+          border-radius: 0.5rem;
+          filter: blur();
+        }
+      }
     }
 
     &:hover {
