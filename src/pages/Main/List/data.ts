@@ -1,18 +1,18 @@
 // styles
-import MakeCirclesImg from "assets/imgs/make-circles.png";
-import FollowLinesImg from "assets/imgs/follow-lines.png";
+import CirclesImg from "assets/imgs/circles.png";
+import LinesImg from "assets/imgs/lines.png";
 import GravityImg from "assets/imgs/gravity.png";
 
 export const data = [
   {
-    name: "Make Circles",
-    backgroundImage: MakeCirclesImg,
-    url: "/make-circles",
+    name: "Circles",
+    backgroundImage: CirclesImg,
+    url: "/circles",
   },
   {
-    name: "Follow Lines",
-    backgroundImage: FollowLinesImg,
-    url: "/follow-lines",
+    name: "Lines",
+    backgroundImage: LinesImg,
+    url: "/lines",
   },
   {
     name: "Gravity",

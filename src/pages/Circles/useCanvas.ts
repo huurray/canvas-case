@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 // lib
 import { getMedia } from "lib/media";
 
-export default function useMakeCircles(ctx: CanvasRenderingContext2D | null) {
+export default function useCanvas(ctx: CanvasRenderingContext2D | null) {
   const screenWidth = window.innerWidth;
   const screenHeight = window.innerHeight;
 

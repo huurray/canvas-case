@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // components
 import Main from "pages/Main";
-import MakeCircles from "pages/MakeCircles";
-import FollowLines from "pages/FollowLines";
+import Circles from "pages/Circles";
+import Lines from "pages/Lines";
 import Gravity from "pages/Gravity";
 // redux
 import { rootStore } from "stores/root";
@@ -19,8 +19,8 @@ const App = () => (
       <Router basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/make-circles" element={<MakeCircles />} />
-          <Route path="/follow-lines" element={<FollowLines />} />
+          <Route path="/circles" element={<Circles />} />
+          <Route path="/lines" element={<Lines />} />
           <Route path="/gravity" element={<Gravity />} />
         </Routes>
       </Router>

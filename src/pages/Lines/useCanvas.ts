@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import { randomColor } from "lib/tools";
 import { getMedia } from "lib/media";
 
-export default function useFollowLines(ctx: CanvasRenderingContext2D | null) {
+export default function useCanvas(ctx: CanvasRenderingContext2D | null) {
   const screenWidth = window.innerWidth;
   const screenHeight = window.innerHeight;
 

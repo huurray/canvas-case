@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import styled from "@emotion/styled";
 // hooks
-import useFollowLines from "./useFollowLines";
+import useCanvas from "./useCanvas";
 // styles
 import { Header } from "styles/ui";
 
@@ -12,7 +12,7 @@ const MakeCircles = () => {
   const canvasRef = useRef<HTMLCanvasElement | any>(null);
   const [ctx, setCtx] = useState<CanvasRenderingContext2D | null>(null);
 
-  const { animate } = useFollowLines(ctx);
+  const { animate } = useCanvas(ctx);
 
   function init() {
     if (!canvasRef?.current) return;
