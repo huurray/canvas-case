@@ -4,6 +4,7 @@ import Main from "pages/Main";
 import Circles from "pages/Circles";
 import Lines from "pages/Lines";
 import Gravity from "pages/Gravity";
+import RubberBand from "pages/RubberBand";
 // redux
 import { rootStore } from "stores/root";
 import { Provider } from "react-redux";
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="/circles" element={<Circles />} />
           <Route path="/lines" element={<Lines />} />
           <Route path="/gravity" element={<Gravity />} />
+          <Route path="/rubber-band" element={<RubberBand />} />
         </Routes>
       </Router>
     </Provider>

@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 // lib
 import { randomColor } from "lib/tools";
 import { getMedia } from "lib/media";
@@ -8,7 +9,8 @@ export default function useCanvas(ctx: CanvasRenderingContext2D | null) {
 
   const media = getMedia();
 
-  const balls = init();
+  let balls = init();
+  const isReset = useRef(false);
 
   function Ball() {
     const gravity = 0.2;
@@ -58,7 +60,14 @@ export default function useCanvas(ctx: CanvasRenderingContext2D | null) {
       ctx.closePath();
     }
 
-    return { update, draw };
+    function reset() {
+      x = randomIntFromRange(radius, screenWidth - radius);
+      y = randomIntFromRange(0, screenHeight - radius);
+      dx = randomIntFromRange(-5, 5);
+      dy = randomIntFromRange(-3, 3);
+    }
+
+    return { update, draw, reset };
   }
   function animate() {
     if (!ctx) return;
@@ -68,8 +77,13 @@ export default function useCanvas(ctx: CanvasRenderingContext2D | null) {
     ctx.fillRect(0, 0, screenWidth, screenHeight);
 
     for (let i = 0; i < balls.length; i++) {
-      balls[i].update();
+      if (isReset.current) {
+        balls[i].reset();
+      } else {
+        balls[i].update();
+      }
     }
+    if (isReset.current) isReset.current = false;
   }
 
   function init() {
@@ -79,6 +93,15 @@ export default function useCanvas(ctx: CanvasRenderingContext2D | null) {
     }
     return newBalls;
   }
+
+  function onClick() {
+    isReset.current = true;
+  }
+
+  useEffect(() => {
+    window.addEventListener("mousedown", onClick);
+    return () => window.addEventListener("mousedown", onClick);
+  }, []);
 
   return {
     animate,

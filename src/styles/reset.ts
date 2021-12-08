@@ -64,7 +64,15 @@ const reset = css`
 		height: 100%;
 	}
 	@media all and (max-width: 750px) {
-		html { font-size: 6px; } 
+		html { font-size: 6px; }
+		* {
+			-webkit-overflow-scrolling: touch;
+			::-webkit-scrollbar {
+				display: none;
+			}
+			-ms-overflow-style: -ms-autohiding-scrollbar;
+			-ms-overflow-style: none;
+		}
 	}
 	* {
 	 	/* scrollbar styling */
@@ -79,7 +87,7 @@ const reset = css`
     }
     ::-webkit-scrollbar-thumb {
       border-radius: 7px;
-      background-color: #eeeeee;
+      background-color: #333;
     }
 	}
 `;
