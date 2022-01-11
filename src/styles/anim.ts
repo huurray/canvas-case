@@ -23,3 +23,12 @@ export const fadeIn = keyframes`
       opacity: 1;
   }
 `;
+
+export const fadeOut = keyframes`
+  70% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+`;

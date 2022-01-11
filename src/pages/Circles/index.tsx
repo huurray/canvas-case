@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 // hooks
 import useCanvas from "./useCanvas";
 // styles
-import { Header } from "styles/ui";
+import { Header, Tutorial } from "styles/ui";
 
 const MakeCircles = () => {
   const screenWidth = window.innerWidth;
@@ -38,6 +38,7 @@ const MakeCircles = () => {
 
   return (
     <Container>
+      <Tutorial />
       <Header whiteBackIcon />
       <canvas ref={canvasRef} />
     </Container>
@@ -47,6 +48,8 @@ const MakeCircles = () => {
 export default MakeCircles;
 
 const Container = styled.div`
+  width: 100%;
+  height: 100%;
   canvas {
     width: 100%;
     height: 100%;
