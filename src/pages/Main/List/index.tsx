@@ -59,10 +59,6 @@ const ListBox = styled.div`
     z-index: -1;
     transition: 0.15s transform;
     will-change: transform;
-
-    &:hover {
-      transform: scale(1.07);
-    }
   }
 
   .item {
