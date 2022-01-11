@@ -5,6 +5,6 @@
 
 A collection of interactive design using HTML Canvas that has been recreated with many references.
 
-https://huurray.github.io/canvas-case/
+https://huurray.github.io/canvas-case
 
 <img width="1784" alt="스크린샷 2021-12-01 오후 5 54 41" src="https://user-images.githubusercontent.com/41982439/144202709-abc683da-9495-44c8-a216-b043589e706e.png">
