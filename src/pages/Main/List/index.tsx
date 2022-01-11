@@ -4,6 +4,8 @@ import { animated } from "@react-spring/web";
 // components
 import Header from "./Header";
 import Copyright from "../Copyright";
+// styles
+import { fadeIn } from "styles/anim";
 
 function List({ transition }) {
   const navigate = useNavigate();
@@ -55,6 +57,12 @@ const ListBox = styled.div`
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    transition: 0.15s transform;
+    will-change: transform;
+
+    &:hover {
+      transform: scale(1.07);
+    }
   }
 
   .item {
@@ -63,8 +71,8 @@ const ListBox = styled.div`
     border-radius: 2.2rem;
     will-change: transform, opacity;
     cursor: pointer;
-    transition: 0.15s transform;
     overflow: hidden;
+    animation: ${fadeIn} 2.3s;
 
     .name {
       margin: 2rem 2.5rem;

@@ -14,3 +14,12 @@ export const shake = keyframes`
     transform: translate3d(2px, 0, 2px);
   }
 `;
+
+export const fadeIn = keyframes`
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+`;
