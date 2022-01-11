@@ -4,8 +4,6 @@ import { animated } from "@react-spring/web";
 // components
 import Header from "./Header";
 import Copyright from "../Copyright";
-// styles
-import { shake } from "styles/anim";
 
 function List({ transition }) {
   const navigate = useNavigate();
@@ -87,12 +85,6 @@ const ListBox = styled.div`
           filter: blur();
         }
       }
-    }
-
-    &:hover {
-      animation: ${shake} 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-      transform: translate3d(0, 0, 0);
-      perspective: 1000px;
     }
   }
 `;
