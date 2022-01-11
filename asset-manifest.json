@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.js": "/canvas-case/static/js/main.b4c74ff4.chunk.js",
-    "main.js.map": "/canvas-case/static/js/main.b4c74ff4.chunk.js.map",
+    "main.js": "/canvas-case/static/js/main.f00e98cd.chunk.js",
+    "main.js.map": "/canvas-case/static/js/main.f00e98cd.chunk.js.map",
     "runtime-main.js": "/canvas-case/static/js/runtime-main.6ea24508.js",
     "runtime-main.js.map": "/canvas-case/static/js/runtime-main.6ea24508.js.map",
-    "static/js/2.cf8f45f1.chunk.js": "/canvas-case/static/js/2.cf8f45f1.chunk.js",
-    "static/js/2.cf8f45f1.chunk.js.map": "/canvas-case/static/js/2.cf8f45f1.chunk.js.map",
+    "static/js/2.4795f6ac.chunk.js": "/canvas-case/static/js/2.4795f6ac.chunk.js",
+    "static/js/2.4795f6ac.chunk.js.map": "/canvas-case/static/js/2.4795f6ac.chunk.js.map",
     "index.html": "/canvas-case/index.html",
-    "static/js/2.cf8f45f1.chunk.js.LICENSE.txt": "/canvas-case/static/js/2.cf8f45f1.chunk.js.LICENSE.txt",
+    "static/js/2.4795f6ac.chunk.js.LICENSE.txt": "/canvas-case/static/js/2.4795f6ac.chunk.js.LICENSE.txt",
     "static/media/circles.75cbc29f.png": "/canvas-case/static/media/circles.75cbc29f.png",
     "static/media/gravity.59013f4c.png": "/canvas-case/static/media/gravity.59013f4c.png",
     "static/media/lines.984ca42a.png": "/canvas-case/static/media/lines.984ca42a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.6ea24508.js",
-    "static/js/2.cf8f45f1.chunk.js",
-    "static/js/main.b4c74ff4.chunk.js"
+    "static/js/2.4795f6ac.chunk.js",
+    "static/js/main.f00e98cd.chunk.js"
   ]
 }
